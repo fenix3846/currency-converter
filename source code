@@ -1,0 +1,40 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("choose one from the following:-");
+        System.out.println("1)Rupees to USD");
+        System.out.println("2)USD to ruppees");
+        int exchange = sc.nextInt();
+        switch (exchange) {
+            case 1: {
+                System.out.println("enter the number of USD");
+                double usd = sc.nextDouble();
+
+                if (usd >= 0) {
+                    System.out.println(usd + "USD is" + usd * 72.85 + "Ruppees");
+
+                } else {
+                    System.out.println("Please enter possitive number of USD");
+                }
+            }
+                break;
+                case 2:
+                    System.out.println("Enter the nummber of ruppees:-");
+                    double ruppees = sc.nextDouble();
+
+                    if (ruppees>=0){
+                        System.out.println(ruppees + "dollars is" + ruppees*0.014 + "ruppes");
+                    }
+                    else {
+                        System.out.println("please enter positive amount of ruppees");
+                    }
+                    break;
+
+
+        }
+    }
+}
